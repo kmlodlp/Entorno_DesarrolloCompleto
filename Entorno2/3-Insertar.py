@@ -1,38 +1,42 @@
 # importacion del modulo
 import psycopg2
 
-#conexion a base de datos
-conexion=psycopg2.connect(user='postgres',
-                          password='Camilo#D11',  
-                          host='localhost',
-                          port='5432',
-                          database='python')
+# conexion a base de datos
+conexion = psycopg2.connect(
+    user="postgres",
+    password="Camilo#D11",
+    host="localhost",
+    port="5432",
+    database="python",
+)
 
 # utilizar cursor
-cursor=conexion.cursor()
+cursor = conexion.cursor()
 
+# Campos  pers_nombre=%s, pers_apellido=%s, edad=%s, id_persona=%s
 # crear sentencia sql
-sql='INSERT INTO personas (pers_nombre,pers_apellido,edad) VALUES(%s,%s,%s)'
+sql = "INSERT INTO personas (id_persona,pers_nombre,pers_apellido,edad) VALUES(%s,%s,%s,%s)"
 
 # solicitud de datos al usuario
-nombre=input('ingrese el nombre: ')
-apellido=input('ingrese el apellido: ')
-edad=input('ingrese la edad: ')
+id = input("ingrese el id de la persona: ")
+nombre = input("ingrese el nombre: ")
+apellido = input("ingrese el apellido: ")
+edad = input("ingrese la edad: ")
 
 # recoleccion de datos
-datos=(nombre,apellido,edad)
+datos = (id,nombre, apellido, edad)
 
 # hacer uso del metodo execute
-cursor.execute(sql,datos)
+cursor.execute(sql, datos)
 
 # guardar registro
 conexion.commit()
 
 # registro insertados
-registros=cursor.rowcount
+registros = cursor.rowcount
 
 # mostrar mensaje
-print(f'registro insertado: {registros}')
+print(f"registro insertado: {registros}")
 
 # cerrar conexiones
 cursor.close()
