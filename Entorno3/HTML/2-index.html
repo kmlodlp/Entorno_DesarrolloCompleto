@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+
+        #referencia_id h1{
+            background-color: yellow;
+        }
+
+        .referencia_clase h1{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sin referencia</h1>
+
+    <div id="referencia_id">
+        <h1>ID</h1>
+    </div>
+
+    <div class="referencia_clase"> 
+        <h1>Clases</h1>
+    </div>
+
+    <div id="referencia_id" class="referencia_clase">
+        <h1>
+            Id - Clases
+        </h1>
+    </div>
+    
+</body>
+</html>

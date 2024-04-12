@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .contenedor1{
+            margin: 10px;
+            border: 10px solid blue; 
+            padding: 10px;
+        }
+
+        .contenedor2{
+            height: 100px;
+            width: 100px;
+
+            margin: 10px;
+            border: solid 5px yellow;
+            border-radius: 17px;
+
+            padding: 10px;  
+        }
+
+        .contenedor3{
+            height: 100px;
+            margin: 10px;
+            border: 10px solid yellowgreen; 
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .contenedor4{
+            display: flex;
+            /* mirar desde el navegador */
+            height: 100px;
+            margin: 10px;
+            border: 10px solid rgb(50, 205, 156); 
+            padding: 10px;
+            background: linear-gradient(to bottom, #193e54, #0be97e);
+
+        }
+
+        /* .contenedor4{
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(2, auto);
+            gap: 2px;
+        } */
+
+        .contenedor4-1{
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor1">
+        caja 1
+    </div>
+
+    <div class="contenedor2">
+        caja 2
+    </div>
+
+    <div class="contenedor3">
+        caja 3
+    </div>
+
+    
+
+
+    <div class="contenedor4">
+        <div class="contenedor4-1">caja 1</div>
+        <div class="contenedor4-1">caja 2</div>
+        <div class="contenedor4-1">caja 3</div>
+        <div class="contenedor4-1">caja 4</div>
+        <!-- <div class="contenedor4-1">caja 1</div>
+        <div class="contenedor4-1">caja 2</div>
+        <div class="contenedor4-1">caja 3</div>
+        <div class="contenedor4-1">caja 4</div> -->
+    </div>
+
+</body>
+</html>

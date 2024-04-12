@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller en Clases</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        background-color: red;
+      }
+
+      header {
+        background-color: red;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      hr {
+        width: 95%;
+      }
+      header h2 {
+        margin: 0%;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        margin-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 98%;
+        height: 98%;
+        /* gap: px; */
+        background-color: white;
+      }
+
+      .card {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: gray;
+        height: 40%;
+        width: 45%;
+      }
+
+      .card > h2 {
+        color: orange;
+      }
+
+      .card > a {
+        text-decoration: none;
+        color: aquamarine;
+      }
+
+      .card > p,
+      .card > a,
+      .card > h2 {
+        margin-left: 20px;
+      }
+
+      footer {
+        display: flex;
+
+        background-color: red;
+        color: white;
+        justify-content: center;
+      }
+
+      img {
+        width: 90%;
+        height: 50%;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>
+        Bienvenido a Nuestra Landing Page de Comida
+        <hr />
+      </h2>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <img
+            src="https://www.shopline.sk/wp-content/uploads/2019/11/1052A023100-555x555.jpg"
+            alt="Asics Sky Elite FF MT "
+          />
+          <h2>Producto 1</h2>
+          <p>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
+            de las industrias desde el año 1500, cuando un impresor (N. del T.
+          </p>
+          <a href="">Ver mas</a>
+        </div>
+        <div class="card">
+          <img
+            src="https://www.shopline.sk/wp-content/uploads/2021/08/1052A054400-555x555.jpg"
+            alt=""
+            width="600px"
+            height="300px"
+          />
+          <h2>Producto 2</h2>
+          <p>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
+            de las industrias desde el año 1500, cuando un impresor (N. del T.
+          </p>
+          <a href="">Ver mas</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h4>2023 Mi Landing Page Compleja</h4>
+    </footer>
+  </body>
+</html>
